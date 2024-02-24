@@ -1,0 +1,170 @@
+.video {
+    position: relative;
+    width: 330px;
+    height: 80vh;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 8px 4px red; */
+}
+  
+.video__player {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .video__progress{
+    position: relative;
+    top:-2%;
+     height: 10px;
+    background-color: rgb(246, 46, 46);
+  }
+ /* .video__controls{
+  
+  position: relative;
+  top: -95%; 
+  width: 10%;
+  height: 5%;
+  left: 40%;
+  border-radius: 50px; 
+  } */
+
+
+  .videoplay{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+  
+  
+  .shortsVideoTop {
+    position: absolute;
+    min-width: fit-content;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .shortsVideoTopIcon {
+    display: flex;
+  }
+  
+  .shortsVideoTopIcon > .MuiSvgIcon-root {
+    font-size: 32px;
+    padding: 15px;
+  }
+  
+  .shortsVideoSideIcons {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+  .shortsVideoSideIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 200px;
+  }
+  /* .count{
+    position:relative;
+     top:-25px
+  } */
+  .shortsVideoSideIcon > p {
+    color: white;
+  }
+  
+  .shortsVideoSideIcon > .MuiSvgIcon-root {
+    padding: 10px;
+    font-size: 28px;
+  }
+  
+  .shortsBottom {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    bottom: 10px;
+  }
+  
+  .shortsDesc {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .shortsDesc > p {
+    color: white;
+  }
+  
+  .MuiSvgIcon-root {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .shortDetails {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .shortDetails > p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .shortDetails > button {
+    padding: 7px;
+    background-color: rgba(177, 177, 177, 0.609);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid rgb(197, 197, 144);
+  }
+  
+   button:hover {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .shortsVideoSideIcon > .MuiSvgIcon-root:hover {
+    color: blue;
+  }
+  
+  .shortsDesc > .ticker {
+    height: fit-content;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .description {
+    color: white;
+  }
+  
+  .shortsVideoSideIcon > .MuiSvgIcon-root:last-child {
+    animation: spinTheRecord infinite 5s linear;
+    bottom: 0;
+    right: 20px;
+    font-size: 32px;
+  }
+  
+  @keyframes spinTheRecord {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
